@@ -1,0 +1,253 @@
+server:
+  port: 8089
+#  servlet:
+#    session:
+#      timeout: 1200   # 定义session的超时时间
+  #CPU数
+  acceptorThreadCount:  4
+  #最小工作线程数
+  minSpareThreads:  50
+  maxSpareThreads:  50
+  maxThreads: 1000
+  maxConnections: 10000
+  #10秒超时
+  connectionTimeout:  10000
+  protocol: org.apache.coyote.http11.Http11Nio2Protocol
+  redirectPort: 443
+  #compression:  on
+  #文件请求大小
+  MaxFileSize:  10240MB
+  MaxRequestSize: 102400MB
+  uriEncoding:  UTF-8
+  http2:
+    enabled: true
+  servlet:
+    context-path: / #項目工程路徑
+spring:
+  application:
+    name: admin-backstage
+#  profiles:
+#    active: @env@
+   #采样率
+  sleuth:
+    sampler:
+       probability: 1.0
+  
+  rabbitmq:
+    host: 192.168.0.151
+    port: 5672
+    username: rabbitmq_wp
+    password: rabbitmq_wp_pass1234ABC
+    publisher-confirms: true
+    virtual-host: /
+  zipkin:
+    #内存方式配置，不需要
+    #base-url: http://192.168.0.152:9411/
+    # sender:
+    #   type: rabbit
+    rabbitmq:
+      queue:  zipkin
+  redis:
+    cluster:
+      nodes:  192.168.0.136:6379,192.168.0.136:6392,192.168.0.136:6393,192.168.0.136:6394,192.168.0.136:6395,192.168.0.136:6396
+#    database: 0
+#    host: 192.168.0.136
+#    port: 6379
+#    password:
+  session:
+    store-type: redis   #session存储类型
+    redis:
+      flush-mode: IMMEDIATE
+      namespace:  spring:session
+
+#配置放行的目录和方法
+#security.ignored=/api/*,/css/*,/js/*,/images/*,/fonts/*,/font-awesome/*
+#表示对thymeleaf模板不再是用默认的HTML5标准来做严格限制
+  thymeleaf:
+    mode: LEGACYHTML5
+    cache: false
+
+#  data:
+#    mongodb:
+#      database: db_sn
+#      host: s3.casino.hiigame.net
+#      port: 27017
+
+#  datasource:
+#    casinolog:
+#      url: jdbc:mysql://t.admin.bdo.izhangxin.com:3306/db_common_info?serverTimezone=UTC&characterEncoding=utf8&useUnicode=true&useSSL=false
+#      username: wolfplus
+#      password: passthis
+#      driver-class-name: com.mysql.jdbc.Driver
+#    casino:
+#      url: jdbc:mysql://s3.db.casino.hiigame.net:3306/db_casino?serverTimezone=UTC&characterEncoding=utf8&useUnicode=true&useSSL=false
+#      username: wolfplus
+#      password: passthis
+#      driver-class-name: com.mysql.jdbc.Driver
+#  jpa:
+#    database: mysql
+#      generate-ddl: true
+#      show-sql: true
+#      hibernate:
+#        ddl-auto: update
+#        naming:
+#          physical-strategy: org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy
+  jpa:
+    database: mysql
+#    database-platform: org.hibernate.dialect.MySQL5Dialect
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+#      naming:
+#        physical-strategy: org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy
+
+  #自定义属性
+admin:
+  mallurl: localhost:9091/       #http://t.mall.pokercity888.com
+  budanurl: manage/admin/budan   #${admin.mallurl}/manage/admin/budan
+  smallgameType:  default,android,ios
+  mall: t
+  wpsmsMids:  11,12,13,68,69,70,78,81,82,90,91,92,93,95,96,98,99,100
+  referCacheurl:  http://t.statics.pokercity888.com/get/pyq/loading/configs/do
+  webnotify_msg_url:  http://t.payment.pokercity888.com/sys/web/notify  #//web总通知接口
+
+#eureka的访问用户名和密码
+  eureka:
+    user: user
+    password: password123
+
+#mysql的配置
+newadd:
+  datasource:
+    casinolog:
+      url: jdbc:mysql://118.25.16.144:3306/db_casino_log?serverTimezone=UTC&characterEncoding=utf8&useUnicode=true&useSSL=false
+      username: wolfplus
+      password: passthis
+      driver-class-name: com.mysql.jdbc.Driver
+      # driverClassName: com.mysql.jdbc.Driver
+      # type: com.zaxxer.hikari.HikariDataSource
+      # hikari:
+      # connection-test-query: SELECT 1 FROM DUAL
+      # minimum-idle: 1
+      # maximum-pool-size: 5
+      # pool-name: bosPoolName
+      # max-lifetime: 1800000
+    casino:
+      url: jdbc:mysql://118.25.16.144:3306/db_casino?serverTimezone=UTC&characterEncoding=utf8&useUnicode=true&useSSL=false
+      username: wolfplus
+      password: passthis
+      # driverClassName: com.mysql.jdbc.Driver
+      driver-class-name: com.mysql.jdbc.Driver
+      # type: com.zaxxer.hikari.HikariDataSource
+      # hikari.minimum-idle:  5
+      # hikari:
+      # connection-test-query: SELECT 1 FROM DUAL
+      # minimum-idle: 1
+      # maximum-pool-size: 5
+      # pool-name: bosPoolName
+      # max-lifetime: 1800000
+
+    accountdetail:
+      url: jdbc:mysql://118.25.16.144:3306/db_account_detail?serverTimezone=UTC&characterEncoding=utf8&useUnicode=true&useSSL=false
+      username: wolfplus
+      password: passthis
+      # driverClassName: com.mysql.jdbc.Driver
+      driver-class-name: com.mysql.jdbc.Driver
+      # type: com.zaxxer.hikari.HikariDataSource
+      # hikari:
+      # connection-test-query: SELECT 1 FROM DUAL
+      # minimum-idle: 1
+      # maximum-pool-size: 5
+      # pool-name: bosPoolName
+      # max-lifetime: 1800000
+
+mongodb:
+  admin:
+    database: db_admin
+    host: 192.168.0.151
+    port: 27017
+  casino:
+    database: db_casino
+    host: 192.168.0.151
+    port: 27017
+  test:
+    database: db_sn
+    host: 192.168.0.151
+    port: 27017
+  paystore:
+    database: db_paystore
+    host: 192.168.0.151
+    port: 27017
+  casinoLog:
+    database: db_casino_log
+    host: 192.168.0.151
+    port: 27017
+  common:
+    database: db_common
+    host: 192.168.0.151
+    port: 27017
+  authen:
+    database: db_authen
+    host: 192.168.0.151
+    port: 27017
+  authenLog:
+    database: db_authen_log
+    host: 192.168.0.151
+    port: 27017
+# eureka:
+#   client:
+#     service-url:
+#       defaultZone: http://user:password123@192.168.0.152:8761/eureka/
+#   instance:
+#     prefer-ip-address: true
+#     instance-id:  localhost:${server.port}
+#     hostname: localhost
+
+#security:
+#  basic:
+#    enabled: false
+
+
+feign:
+#feign的压缩配置，启用feign的请求和响应压缩功能
+  compression:
+    request:
+      enabled: true
+      mime-types: text/xml,application/xml,application/json #用于支持的媒体类型列表
+      min-request-size: 2048 #设置请求的最小阈值
+    response:
+      enabled: true
+#feign的日志输出配置
+logging:
+  level:
+    com.wolfplus.delta.adminbackstage.feign.AdminbackstageApplication: DEBUG # 将Feign接口的日志级别设置成DEBUG，因为Feign的Logger.Level只对DEBUG作出响应。
+
+
+
+referCacheurl:  192.168.0.152:9099/pyq/sn/kka
+management:
+  endpoints:
+    web:
+      exposure:
+        include: bus-refresh
+#config-server自动刷新的gitee的秘钥
+# encrypt:
+#   key: suning
+
+
+# elasticjob:
+#   serverlists: 192.168.0.136:2181
+#   namespace: boot-job
+#   spring:
+#     datasource:
+#       url: jdbc:mysql://s3.db.casino.hiigame.net:3306/db_casino?characterEncoding=utf-8&verifyServerCertificate=false&useSSL=false&requireSSL=false
+#       driver-class-name: com.mysql.jdbc.Driver
+#       username: wolfplus
+#       password: passthis
+#       type: com.zaxxer.hikari.HikariDataSource
+#    #  自动创建更新验证数据库结构
+#     jpa:
+#       hibernate:
+#         ddl-auto: update
+#       show-sql: true
+#       database: mysql

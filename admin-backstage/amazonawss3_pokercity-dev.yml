@@ -1,0 +1,7 @@
+amazons3:
+  accessKeyID: AKIAJW6JG62AY3ACKHYQ
+  secretKey: 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
+  pokercityBucketName: game-apk.pokercity888.com
+  pokercityApkDomainName: http://deelq4mei1pvz.cloudfront.net/
+  pokercityImageDomainName: http://dx6b9nqy3tuye.cloudfront.net/
+  pokercityImageBucket: images.pokercity888.com

@@ -1,0 +1,14 @@
+server:
+  port: 8030
+eureka:
+  client:
+    service-url:
+      defaultZone: http://user:password123@192.168.0.152:8761/eureka/
+    healthcheck:
+      enabled:  true
+  instance:
+    #prefer-ip-address: false      #将自己的ip注册到eureka server上，默认为false,表示将微服务所在操作系统的hostname到eureka上
+    prefer-ip-address: true
+    instance-id:  192.168.0.152:${server.port}
+    hostname: 192.168.0.152
+

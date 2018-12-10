@@ -1,0 +1,8 @@
+tencetcloud:
+  appId: 10002475
+  secretId: AKIDKeXNV7yxL0x6rQxlJ3dgESoP3KMJJ9Zr
+  secretKey: NQY2lQ2kNrgKAfi7LcHiJcR0wdtEbtU3
+  bucketName: game
+  imageBucketName: picts
+  apkDomainName: http://game.izhangxin.com
+  imageDomainName: http://pictures.hiigame.com/

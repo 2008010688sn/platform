@@ -1,0 +1,13 @@
+server:
+  port: 8031
+eureka:
+  client:
+    service-url:
+      defaultZone: http://user:password123@192.168.0.152:8761/eureka/
+  instance:
+    prefer-ip-address: true
+    instance-id:  192.168.0.152:${server.port}
+    hostname: 192.168.0.152
+#turbine:
+#  appConfig: custorm-movie      #要聚合的微服务名称
+#  clusterNameExpression: "'default'"

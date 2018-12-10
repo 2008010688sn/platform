@@ -1,0 +1,39 @@
+server:
+  port: 8040
+#注册到eureka server的路径，如若有验证，则写法为user:password@ip:port/eureka/
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://user:password123@192.168.0.152:8761/eureka/
+  instance:
+    prefer-ip-address: true
+    instance-id:  192.168.0.152:${server.port}
+    hostname: 192.168.0.152
+
+#自定义日志配置
+logging:
+  config: classpath:logback-zuul.xml
+  level:
+    root: INFO
+spring:
+  redis:
+    database: 0
+    host: 192.168.0.151
+    port: 6379
+    password: crs-h1y3manw:passthis1234
+zuul:
+  ratelimit:
+    enabled: true
+    repository: redis
+    #表示启用限流策略，并且所有服务在3秒内只能有1次请求且所有请求时间总和不得超过2秒
+    default-policy:
+      limit: 1
+      quota: 1
+      refresh-interval: 3
+      #每个Url60秒内访问次数不得超过10次且总计访问时间这不得超过50秒
+    policies:       
+      login-server:
+        limit: 10
+        quota: 50
+        refresh-interval: 60
+        type: url

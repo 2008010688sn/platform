@@ -1,0 +1,26 @@
+server:
+  port: 9090
+#将config client注册到eureka server上
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://user:password123@localhost:8761/eureka/   #注册到eureka server的路径，如若有验证，则写法为user:password@ip:port/eureka/
+  instance:
+      prefer-ip-address: true   #将自己的ip注册到eureka server上，默认为false,表示将微服务所在操作系统的hostname到eureka上
+     #可以自定义元数据，key/value可随便写
+      metadata-map:
+        mymete: izhangxin
+#spring:
+#为微服务添加zipkin配置
+#  zipkin:
+#    base-url: http://localhost:9411   #指定zipkin的路径
+#    rabbitmq:
+  #     queue: zipkin
+  # sleuth:
+  #   sampler:
+  #     percentage: 1.0   #指定需采样的请求的百分比，默认为0.1,即10%，这是因为在分布式系统中，数据量会非常大，因此采样非常重要
+#自定义日志配置
+logging:
+  config: classpath:logback-authen.xml
+  level:
+    root: INFO
