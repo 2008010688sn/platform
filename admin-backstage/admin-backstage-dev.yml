@@ -224,7 +224,7 @@ logging:
 
 
 
-referCacheurl:  192.168.0.152:9099/pyq/sn/sssss
+referCacheurl:  192.168.0.152:9099/pyq/sn/
 management:
   endpoints:
     web:
