@@ -1,26 +1,72 @@
 server:
-  port: 9090
-#将config client注册到eureka server上
+    port: 9090
+
+spring:
+    profiles:
+      active: dev
+    application:
+        name: authen-server
+    redis:
+    #    cluster:
+    #      nodes:  192.168.0.136:6379,192.168.0.136:6392,192.168.0.136:6393,192.168.0.136:6394,192.168.0.136:6395,192.168.0.136:6396
+      database: 0
+      host: 192.168.0.151
+      port: 6379
+      password: crs-h1y3manw:passthis1234
+      dev:
+          host: 182.254.241.189
+          port: 6379
+          password: 123456
+          testOnBorrow: true
+          max-active: 2000
+          max-idle: 200
+          max-wait: 3000
+          min-idle: 0
+#    redis:
+#        cluster:
+#          max-redirects:
+#          nodes: 192.168.0.136:6379,192.168.0.136:6392,192.168.0.136:6393
+#        database: 0
+#        host: 192.168.0.134
+#        port: 6378
+#        password:
+#        dev:
+#            host: 182.254.241.189
+#            port: 6379
+#            password: 123456
+#            testOnBorrow: true
+#            max-active: 2000
+#            max-idle: 200
+#            max-wait: 3000
+#            min-idle: 0
+
 eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://user:password123@localhost:8761/eureka/   #注册到eureka server的路径，如若有验证，则写法为user:password@ip:port/eureka/
-  instance:
-      prefer-ip-address: true   #将自己的ip注册到eureka server上，默认为false,表示将微服务所在操作系统的hostname到eureka上
-     #可以自定义元数据，key/value可随便写
-      metadata-map:
-        mymete: izhangxin
-#spring:
-#为微服务添加zipkin配置
-#  zipkin:
-#    base-url: http://localhost:9411   #指定zipkin的路径
-#    rabbitmq:
-  #     queue: zipkin
-  # sleuth:
-  #   sampler:
-  #     percentage: 1.0   #指定需采样的请求的百分比，默认为0.1,即10%，这是因为在分布式系统中，数据量会非常大，因此采样非常重要
-#自定义日志配置
+    client:
+        service-url:
+            defaultZone: http://user:password123@192.168.0.152:8761/eureka/
+#    instance:
+#        hostname: localhost
+    instance:
+      #prefer-ip-address: false      #将自己的ip注册到eureka server上，默认为false,表示将微服务所在操作系统的hostname到eureka上
+      prefer-ip-address: true
+      instance-id:  192.168.0.152:${server.port}
+      hostname: 192.168.0.152
+
+
+mongodb:
+    authen:
+        database: db_authen
+        host: 192.168.0.151
+        port: 27017
+    common:
+        database: db_common
+        host: 192.168.0.151
+        port: 27017
+
 logging:
-  config: classpath:logback-authen.xml
   level:
-    root: INFO
+    org:
+      springframework:
+        data:
+          mongodb:
+            core: DEBUG
