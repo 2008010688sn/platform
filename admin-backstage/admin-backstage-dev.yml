@@ -36,8 +36,8 @@ spring:
   rabbitmq:
     host: 192.168.0.151
     port: 5672
-    username: rabbitmq_wp
-    password: rabbitmq_wp_pass1234ABC
+    username: '{cipher}AQCExSB+L48xlUg6skSScdhsrYiGrucAzf+0v5AQIpHWMKYGaUOwR7TpojJmGti8NtLRi1ExhZ99Vu05Rhs23Pd6oFLWWrAokpOaty8psGhHyOocMUe0JxRVywylsV0rOhNpfkY7xtlCH2w6eF8WVBW8vVHSqou6pWm0zBouMVhT8o+sM5hc80F8SRrosnqIPUPS36L0WnY+DJhZr35WWdxTUP0EMVkskrz6sdypnXHSVEaWsCtzyk5tZ1Bkz1w6DcJGpaxNKKj9J96UqOswLsJHsSH6IEYrBn/uZ7w4LsIuKRHVc7eLiRd7EFswwODyxw3uCPxxQXrv+LHPXSfq81z3yeCsfVrzFL+9laMRsFMpsfdIblE+GSC2TUoKiHuKyFY='
+    password: '{cipher}AQBLq5hxXHCB96247f8EQ+7WvHltr7iqAM86sh2YMzhtuo3gC19djA0h6DTb+pns9pfMUSjuxIiyQqcY4flsUXSKIeDvycj4qfqIyn7iHzpP+n5YyWt7rCYQi1twV5vfkBF/l1Ez5V1wyl3uBbdR1JHqHI0W5hgvXm2ws0+Fcah01pLA/UlapZaEjPW8vK7DKshOwvSJ3znJNsw9irc7DVJiHRzi7Dx5RNoHQ7LNUNSec/VduT3kqk9b5MHxb2brx1zYvWOMgitCYJitDOYa4TqQu78It3aGULl4+SoW+P1zEkX2Lb0BB97cB4BBhojrLJknpXBiMb8Q1yY5mGp8L4mO+gw0AtYbG+jBrRwCW4xzOkxuc641Ad3gn7Zu4Z04k9qJfQ9lCyJP4FZsOe0dDqga'
     publisher-confirms: true
     virtual-host: /
   zipkin:
@@ -113,14 +113,14 @@ admin:
 
 #eureka的访问用户名和密码
   eureka:
-    user: user
-    password: password123
+    user: '{cipher}AQCWXv0JjeLo7Pf8qxnCJpNp8KJUMSiKKjx8cxj2+J5+27x65uB98vqsplyyYbdKOJSbDbI7v1HU4iNqnf+fr11j91nJnbnxYcP/hs1axiK9C8qLAvfFG67XRzyQVuumW9c2ockY5+kEj+mfBP1P7HXsj7YLWMfxRZbohZkrJv6QnQCNDeGy5pQjKoApmEEBEpLtTDKypYOKOOq9DotoFIgAEV/QIuxZGonZE4lWkguxQ/1qmdDAPfGsY2arvzzlPMygH8JeYorE/py4HyPOU1D3KGmpl3ekeUjtjwSwY8SCvodgGJWCfdua7nfsjaHwNuw5JQh1Fydp6VmYOPpf47ldj+yDezrAgo1Wix+acKF1vCeLE2Wci2mFTqKW08DIXhU='
+    password: '{cipher}AQCK6xARcQUpoW9RCFahB6yrdOj9a/yssP4wgTY5evk8etdDx/YfsFVl+NwglpuBoGl6+qNhjWvrod4qzVSbFxIbUKoS6VqwRy5cYE+2h2Cumr7IWT9kOtMdGSIDi1uEsH00qmE5YedAs5WUTY4VKmmZ+42qhHnvX15gaIJRVrZhsIi9MeemnQJv4EbQcegSQqzVkEpu9u6n5fz8arfl3OFkyNBz8LkiijOarawpabJFYS4V4IZiYsBYjIdynuwe7QkxLQhjarXbNkBzFDoDoyz2n8hxbN7yHPSKEtA9oHWMmqCX0KSXW8ajxN7aI4Z5agSnx2Z1o6uI7IfxPf52saR9uwYHoqz9OqdEJ8AbZeXILlt7++0suaLOokSX/OhwO6w='
 
 #mysql的配置
 newadd:
   datasource:
     casinolog:
-      url: jdbc:mysql://118.25.16.144:3306/db_casino_log?serverTimezone=UTC&characterEncoding=utf8&useUnicode=true&useSSL=false
+      url: jdbc:mysql://'{cipher}AQCUPxy9MWnfukBdUvhJtzCQk/ndDoi+UXjrGYwr1xykQhmltUyaxJ2p1MnIhdp0ek35SivIVBhtZuAa3ITgh80Gt4ka5by/xtZ+xi2td+lvAJIXEGjxdBHj2hKdiUyvCinpz71AiJkWz2XEfPdvVlCfOMsqcDlVvnvPblAU+Y+NwQVCdWDAX/gKHEQVf5FPnH3M8Vz1gimhZk+MCstWNen6zOe3khUKQ1QzeyLD67UzoNxD1+PSt6VNmjKaroeRBSn/7nUjkTxPtr702ZQbr2eo88ez18Xq5tXlIzsOQ0/G2txpUBKJVznCv2L4je6D3+yy6D4U54Cmpw3Uem1+xdXWFlPPpMwblElYY19FM+pHUzBvW4WBCIruxlYm4qSIfgS2vb6GiI/RHa+/CA3uT3t8'/db_casino_log?serverTimezone=UTC&characterEncoding=utf8&useUnicode=true&useSSL=false
       username: '{cipher}AQBOKZi6wk5r4ZE6o/Zh4D38o5GitiUvTnOyeZnkWkxhwZhxlCeDnc/hDTOC+F7p6S16DNC7Myufl7FlxPbFYYOSmYp5IPV9RyZXZcU7aAbNL+VoQTGU22ampnYxS4X8IaHkmPBnY+glX1tD+47Gl4yBOQeo2EdOL0WoTRgv3Cs7Y/skv5ddSVKYzCcAEmDBZnXiXNf12soPVVF3WUUOksJ1U1Q1CILkTKZMuDCkh3zPuJqy0vYCNv8KqYPFeblAwMycDOibMaBvFoOZZ9cU4upbMvbMaDiSNAofFJnbQXD+cGl62nG7nzZ1t9XvudwBp5WEzP/MB2xkJ3Cbf9mFazqkadLiPA4/lm67bAmNCaZ8vAGWXqkAjxJPZCdi3OkgXzg='
       password: '{cipher}AQCeCtplJ8ecKLpZsgyDRU9F91Glr/PHT/V2RgCFBnC7vPNB3183HbYIXNveMUcdRRkw+2Q5i+ZhiaJeio1MBOHyuNyXymW2RyMB7BNTEFAzNEQbXwzSx8O5+wpJ03U9ZAc2wpUaV2XhpDMUPDmTzyunumiaPc8gkYzY/079lGAATqzt1e/9O8sAGhdipyOcBEciMnpiNHNQFlbHonsNa9GaBsvZFhUjpxoTbFMo3zOSgAet9ei6Q8SIVtS1jpbDcM56dIKTc2/rlsAsvaZNGAG02CqilWZFn3F5JCq+/JlNcZMMYsB3AyUtT6xVOqdypLTV6zdi7T2bB8nLw4dyLzR4z57rzh2UqsM187pASd6QJRPwmQEtiOm10URFfakgeGA='
       driver-class-name: com.mysql.jdbc.Driver
@@ -133,7 +133,7 @@ newadd:
       # pool-name: bosPoolName
       # max-lifetime: 1800000
     casino:
-      url: jdbc:mysql://118.25.16.144:3306/db_casino?serverTimezone=UTC&characterEncoding=utf8&useUnicode=true&useSSL=false
+      url: jdbc:mysql://'{cipher}AQCUPxy9MWnfukBdUvhJtzCQk/ndDoi+UXjrGYwr1xykQhmltUyaxJ2p1MnIhdp0ek35SivIVBhtZuAa3ITgh80Gt4ka5by/xtZ+xi2td+lvAJIXEGjxdBHj2hKdiUyvCinpz71AiJkWz2XEfPdvVlCfOMsqcDlVvnvPblAU+Y+NwQVCdWDAX/gKHEQVf5FPnH3M8Vz1gimhZk+MCstWNen6zOe3khUKQ1QzeyLD67UzoNxD1+PSt6VNmjKaroeRBSn/7nUjkTxPtr702ZQbr2eo88ez18Xq5tXlIzsOQ0/G2txpUBKJVznCv2L4je6D3+yy6D4U54Cmpw3Uem1+xdXWFlPPpMwblElYY19FM+pHUzBvW4WBCIruxlYm4qSIfgS2vb6GiI/RHa+/CA3uT3t8'/db_casino?serverTimezone=UTC&characterEncoding=utf8&useUnicode=true&useSSL=false
       username: '{cipher}AQBOKZi6wk5r4ZE6o/Zh4D38o5GitiUvTnOyeZnkWkxhwZhxlCeDnc/hDTOC+F7p6S16DNC7Myufl7FlxPbFYYOSmYp5IPV9RyZXZcU7aAbNL+VoQTGU22ampnYxS4X8IaHkmPBnY+glX1tD+47Gl4yBOQeo2EdOL0WoTRgv3Cs7Y/skv5ddSVKYzCcAEmDBZnXiXNf12soPVVF3WUUOksJ1U1Q1CILkTKZMuDCkh3zPuJqy0vYCNv8KqYPFeblAwMycDOibMaBvFoOZZ9cU4upbMvbMaDiSNAofFJnbQXD+cGl62nG7nzZ1t9XvudwBp5WEzP/MB2xkJ3Cbf9mFazqkadLiPA4/lm67bAmNCaZ8vAGWXqkAjxJPZCdi3OkgXzg='
       password: '{cipher}AQCeCtplJ8ecKLpZsgyDRU9F91Glr/PHT/V2RgCFBnC7vPNB3183HbYIXNveMUcdRRkw+2Q5i+ZhiaJeio1MBOHyuNyXymW2RyMB7BNTEFAzNEQbXwzSx8O5+wpJ03U9ZAc2wpUaV2XhpDMUPDmTzyunumiaPc8gkYzY/079lGAATqzt1e/9O8sAGhdipyOcBEciMnpiNHNQFlbHonsNa9GaBsvZFhUjpxoTbFMo3zOSgAet9ei6Q8SIVtS1jpbDcM56dIKTc2/rlsAsvaZNGAG02CqilWZFn3F5JCq+/JlNcZMMYsB3AyUtT6xVOqdypLTV6zdi7T2bB8nLw4dyLzR4z57rzh2UqsM187pASd6QJRPwmQEtiOm10URFfakgeGA='
       # driverClassName: com.mysql.jdbc.Driver
@@ -148,7 +148,7 @@ newadd:
       # max-lifetime: 1800000
 
     accountdetail:
-      url: jdbc:mysql://118.25.16.144:3306/db_account_detail?serverTimezone=UTC&characterEncoding=utf8&useUnicode=true&useSSL=false
+      url: jdbc:mysql://'{cipher}AQCUPxy9MWnfukBdUvhJtzCQk/ndDoi+UXjrGYwr1xykQhmltUyaxJ2p1MnIhdp0ek35SivIVBhtZuAa3ITgh80Gt4ka5by/xtZ+xi2td+lvAJIXEGjxdBHj2hKdiUyvCinpz71AiJkWz2XEfPdvVlCfOMsqcDlVvnvPblAU+Y+NwQVCdWDAX/gKHEQVf5FPnH3M8Vz1gimhZk+MCstWNen6zOe3khUKQ1QzeyLD67UzoNxD1+PSt6VNmjKaroeRBSn/7nUjkTxPtr702ZQbr2eo88ez18Xq5tXlIzsOQ0/G2txpUBKJVznCv2L4je6D3+yy6D4U54Cmpw3Uem1+xdXWFlPPpMwblElYY19FM+pHUzBvW4WBCIruxlYm4qSIfgS2vb6GiI/RHa+/CA3uT3t8'/db_account_detail?serverTimezone=UTC&characterEncoding=utf8&useUnicode=true&useSSL=false
       username: '{cipher}AQBOKZi6wk5r4ZE6o/Zh4D38o5GitiUvTnOyeZnkWkxhwZhxlCeDnc/hDTOC+F7p6S16DNC7Myufl7FlxPbFYYOSmYp5IPV9RyZXZcU7aAbNL+VoQTGU22ampnYxS4X8IaHkmPBnY+glX1tD+47Gl4yBOQeo2EdOL0WoTRgv3Cs7Y/skv5ddSVKYzCcAEmDBZnXiXNf12soPVVF3WUUOksJ1U1Q1CILkTKZMuDCkh3zPuJqy0vYCNv8KqYPFeblAwMycDOibMaBvFoOZZ9cU4upbMvbMaDiSNAofFJnbQXD+cGl62nG7nzZ1t9XvudwBp5WEzP/MB2xkJ3Cbf9mFazqkadLiPA4/lm67bAmNCaZ8vAGWXqkAjxJPZCdi3OkgXzg='
       password: '{cipher}AQCeCtplJ8ecKLpZsgyDRU9F91Glr/PHT/V2RgCFBnC7vPNB3183HbYIXNveMUcdRRkw+2Q5i+ZhiaJeio1MBOHyuNyXymW2RyMB7BNTEFAzNEQbXwzSx8O5+wpJ03U9ZAc2wpUaV2XhpDMUPDmTzyunumiaPc8gkYzY/079lGAATqzt1e/9O8sAGhdipyOcBEciMnpiNHNQFlbHonsNa9GaBsvZFhUjpxoTbFMo3zOSgAet9ei6Q8SIVtS1jpbDcM56dIKTc2/rlsAsvaZNGAG02CqilWZFn3F5JCq+/JlNcZMMYsB3AyUtT6xVOqdypLTV6zdi7T2bB8nLw4dyLzR4z57rzh2UqsM187pASd6QJRPwmQEtiOm10URFfakgeGA='
       # driverClassName: com.mysql.jdbc.Driver
@@ -164,35 +164,35 @@ newadd:
 mongodb:
   admin:
     database: db_admin
-    host: 192.168.0.151
+    host: '{cipher}AQAdiuHa0gnAOgerEvOnlOgWXGucFpFEuzGnSiZxDIV3/x5qxxYlX8nF3PCdkzjA3UZu+GqpXZrryKyEOoMcuIMxLycZ5pyq/3O6FcrNY0nGZMJzssDtM/mQfk+r0H2VfjeFoQzwj+sYSWpKxyfnTWJLRkAKLmjOgjmuD3svFNAJcTqbOINYFj9xfh8+mXdcx4Zp9zubjAzh7vxrdaih5UlSTM+zrWmk6j/rDSijbwDND+E967uS1yn6Io0wVgdf7m0xbVxd2T5prIoQKxH9avFix5eSXjSSIwRh4NgLEnOi7YQNWXiqAJT5Ri3SPYmaaFEyOfETnzZ04vHNrdEDumQ7Pt6lV3ArIBblgJJEH1r9GT/KUqJLG1ELNdotolYiVhg='
     port: 27017
   casino:
     database: db_casino
-    host: 192.168.0.151
+    host: '{cipher}AQAdiuHa0gnAOgerEvOnlOgWXGucFpFEuzGnSiZxDIV3/x5qxxYlX8nF3PCdkzjA3UZu+GqpXZrryKyEOoMcuIMxLycZ5pyq/3O6FcrNY0nGZMJzssDtM/mQfk+r0H2VfjeFoQzwj+sYSWpKxyfnTWJLRkAKLmjOgjmuD3svFNAJcTqbOINYFj9xfh8+mXdcx4Zp9zubjAzh7vxrdaih5UlSTM+zrWmk6j/rDSijbwDND+E967uS1yn6Io0wVgdf7m0xbVxd2T5prIoQKxH9avFix5eSXjSSIwRh4NgLEnOi7YQNWXiqAJT5Ri3SPYmaaFEyOfETnzZ04vHNrdEDumQ7Pt6lV3ArIBblgJJEH1r9GT/KUqJLG1ELNdotolYiVhg='
     port: 27017
   test:
     database: db_sn
-    host: 192.168.0.151
+    host: '{cipher}AQAdiuHa0gnAOgerEvOnlOgWXGucFpFEuzGnSiZxDIV3/x5qxxYlX8nF3PCdkzjA3UZu+GqpXZrryKyEOoMcuIMxLycZ5pyq/3O6FcrNY0nGZMJzssDtM/mQfk+r0H2VfjeFoQzwj+sYSWpKxyfnTWJLRkAKLmjOgjmuD3svFNAJcTqbOINYFj9xfh8+mXdcx4Zp9zubjAzh7vxrdaih5UlSTM+zrWmk6j/rDSijbwDND+E967uS1yn6Io0wVgdf7m0xbVxd2T5prIoQKxH9avFix5eSXjSSIwRh4NgLEnOi7YQNWXiqAJT5Ri3SPYmaaFEyOfETnzZ04vHNrdEDumQ7Pt6lV3ArIBblgJJEH1r9GT/KUqJLG1ELNdotolYiVhg='
     port: 27017
   paystore:
     database: db_paystore
-    host: 192.168.0.151
+    host: '{cipher}AQAdiuHa0gnAOgerEvOnlOgWXGucFpFEuzGnSiZxDIV3/x5qxxYlX8nF3PCdkzjA3UZu+GqpXZrryKyEOoMcuIMxLycZ5pyq/3O6FcrNY0nGZMJzssDtM/mQfk+r0H2VfjeFoQzwj+sYSWpKxyfnTWJLRkAKLmjOgjmuD3svFNAJcTqbOINYFj9xfh8+mXdcx4Zp9zubjAzh7vxrdaih5UlSTM+zrWmk6j/rDSijbwDND+E967uS1yn6Io0wVgdf7m0xbVxd2T5prIoQKxH9avFix5eSXjSSIwRh4NgLEnOi7YQNWXiqAJT5Ri3SPYmaaFEyOfETnzZ04vHNrdEDumQ7Pt6lV3ArIBblgJJEH1r9GT/KUqJLG1ELNdotolYiVhg='
     port: 27017
   casinoLog:
     database: db_casino_log
-    host: 192.168.0.151
+    host: '{cipher}AQAdiuHa0gnAOgerEvOnlOgWXGucFpFEuzGnSiZxDIV3/x5qxxYlX8nF3PCdkzjA3UZu+GqpXZrryKyEOoMcuIMxLycZ5pyq/3O6FcrNY0nGZMJzssDtM/mQfk+r0H2VfjeFoQzwj+sYSWpKxyfnTWJLRkAKLmjOgjmuD3svFNAJcTqbOINYFj9xfh8+mXdcx4Zp9zubjAzh7vxrdaih5UlSTM+zrWmk6j/rDSijbwDND+E967uS1yn6Io0wVgdf7m0xbVxd2T5prIoQKxH9avFix5eSXjSSIwRh4NgLEnOi7YQNWXiqAJT5Ri3SPYmaaFEyOfETnzZ04vHNrdEDumQ7Pt6lV3ArIBblgJJEH1r9GT/KUqJLG1ELNdotolYiVhg='
     port: 27017
   common:
     database: db_common
-    host: 192.168.0.151
+    host: '{cipher}AQAdiuHa0gnAOgerEvOnlOgWXGucFpFEuzGnSiZxDIV3/x5qxxYlX8nF3PCdkzjA3UZu+GqpXZrryKyEOoMcuIMxLycZ5pyq/3O6FcrNY0nGZMJzssDtM/mQfk+r0H2VfjeFoQzwj+sYSWpKxyfnTWJLRkAKLmjOgjmuD3svFNAJcTqbOINYFj9xfh8+mXdcx4Zp9zubjAzh7vxrdaih5UlSTM+zrWmk6j/rDSijbwDND+E967uS1yn6Io0wVgdf7m0xbVxd2T5prIoQKxH9avFix5eSXjSSIwRh4NgLEnOi7YQNWXiqAJT5Ri3SPYmaaFEyOfETnzZ04vHNrdEDumQ7Pt6lV3ArIBblgJJEH1r9GT/KUqJLG1ELNdotolYiVhg='
     port: 27017
   authen:
     database: db_authen
-    host: 192.168.0.151
+    host: '{cipher}AQAdiuHa0gnAOgerEvOnlOgWXGucFpFEuzGnSiZxDIV3/x5qxxYlX8nF3PCdkzjA3UZu+GqpXZrryKyEOoMcuIMxLycZ5pyq/3O6FcrNY0nGZMJzssDtM/mQfk+r0H2VfjeFoQzwj+sYSWpKxyfnTWJLRkAKLmjOgjmuD3svFNAJcTqbOINYFj9xfh8+mXdcx4Zp9zubjAzh7vxrdaih5UlSTM+zrWmk6j/rDSijbwDND+E967uS1yn6Io0wVgdf7m0xbVxd2T5prIoQKxH9avFix5eSXjSSIwRh4NgLEnOi7YQNWXiqAJT5Ri3SPYmaaFEyOfETnzZ04vHNrdEDumQ7Pt6lV3ArIBblgJJEH1r9GT/KUqJLG1ELNdotolYiVhg='
     port: 27017
   authenLog:
     database: db_authen_log
-    host: 192.168.0.151
+    host: '{cipher}AQAdiuHa0gnAOgerEvOnlOgWXGucFpFEuzGnSiZxDIV3/x5qxxYlX8nF3PCdkzjA3UZu+GqpXZrryKyEOoMcuIMxLycZ5pyq/3O6FcrNY0nGZMJzssDtM/mQfk+r0H2VfjeFoQzwj+sYSWpKxyfnTWJLRkAKLmjOgjmuD3svFNAJcTqbOINYFj9xfh8+mXdcx4Zp9zubjAzh7vxrdaih5UlSTM+zrWmk6j/rDSijbwDND+E967uS1yn6Io0wVgdf7m0xbVxd2T5prIoQKxH9avFix5eSXjSSIwRh4NgLEnOi7YQNWXiqAJT5Ri3SPYmaaFEyOfETnzZ04vHNrdEDumQ7Pt6lV3ArIBblgJJEH1r9GT/KUqJLG1ELNdotolYiVhg='
     port: 27017
 # eureka:
 #   client:
@@ -224,7 +224,7 @@ logging:
 
 
 
-referCacheurl: 192.168.0.152:9099/pyq/sn
+referCacheurl: 192.168.0.152:9099/pyq/sn/test
 management:
   endpoints:
     web:
