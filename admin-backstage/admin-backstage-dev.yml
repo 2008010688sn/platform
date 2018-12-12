@@ -120,7 +120,7 @@ admin:
 newadd:
   datasource:
     casinolog:
-      url: jdbc:mysql://'{cipher}AQCUPxy9MWnfukBdUvhJtzCQk/ndDoi+UXjrGYwr1xykQhmltUyaxJ2p1MnIhdp0ek35SivIVBhtZuAa3ITgh80Gt4ka5by/xtZ+xi2td+lvAJIXEGjxdBHj2hKdiUyvCinpz71AiJkWz2XEfPdvVlCfOMsqcDlVvnvPblAU+Y+NwQVCdWDAX/gKHEQVf5FPnH3M8Vz1gimhZk+MCstWNen6zOe3khUKQ1QzeyLD67UzoNxD1+PSt6VNmjKaroeRBSn/7nUjkTxPtr702ZQbr2eo88ez18Xq5tXlIzsOQ0/G2txpUBKJVznCv2L4je6D3+yy6D4U54Cmpw3Uem1+xdXWFlPPpMwblElYY19FM+pHUzBvW4WBCIruxlYm4qSIfgS2vb6GiI/RHa+/CA3uT3t8'/db_casino_log?serverTimezone=UTC&characterEncoding=utf8&useUnicode=true&useSSL=false
+      url: jdbc:mysql://118.25.16.144:3306/db_casino_log?serverTimezone=UTC&characterEncoding=utf8&useUnicode=true&useSSL=false
       username: '{cipher}AQBOKZi6wk5r4ZE6o/Zh4D38o5GitiUvTnOyeZnkWkxhwZhxlCeDnc/hDTOC+F7p6S16DNC7Myufl7FlxPbFYYOSmYp5IPV9RyZXZcU7aAbNL+VoQTGU22ampnYxS4X8IaHkmPBnY+glX1tD+47Gl4yBOQeo2EdOL0WoTRgv3Cs7Y/skv5ddSVKYzCcAEmDBZnXiXNf12soPVVF3WUUOksJ1U1Q1CILkTKZMuDCkh3zPuJqy0vYCNv8KqYPFeblAwMycDOibMaBvFoOZZ9cU4upbMvbMaDiSNAofFJnbQXD+cGl62nG7nzZ1t9XvudwBp5WEzP/MB2xkJ3Cbf9mFazqkadLiPA4/lm67bAmNCaZ8vAGWXqkAjxJPZCdi3OkgXzg='
       password: '{cipher}AQCeCtplJ8ecKLpZsgyDRU9F91Glr/PHT/V2RgCFBnC7vPNB3183HbYIXNveMUcdRRkw+2Q5i+ZhiaJeio1MBOHyuNyXymW2RyMB7BNTEFAzNEQbXwzSx8O5+wpJ03U9ZAc2wpUaV2XhpDMUPDmTzyunumiaPc8gkYzY/079lGAATqzt1e/9O8sAGhdipyOcBEciMnpiNHNQFlbHonsNa9GaBsvZFhUjpxoTbFMo3zOSgAet9ei6Q8SIVtS1jpbDcM56dIKTc2/rlsAsvaZNGAG02CqilWZFn3F5JCq+/JlNcZMMYsB3AyUtT6xVOqdypLTV6zdi7T2bB8nLw4dyLzR4z57rzh2UqsM187pASd6QJRPwmQEtiOm10URFfakgeGA='
       driver-class-name: com.mysql.jdbc.Driver
@@ -133,7 +133,7 @@ newadd:
       # pool-name: bosPoolName
       # max-lifetime: 1800000
     casino:
-      url: jdbc:mysql://'{cipher}AQCUPxy9MWnfukBdUvhJtzCQk/ndDoi+UXjrGYwr1xykQhmltUyaxJ2p1MnIhdp0ek35SivIVBhtZuAa3ITgh80Gt4ka5by/xtZ+xi2td+lvAJIXEGjxdBHj2hKdiUyvCinpz71AiJkWz2XEfPdvVlCfOMsqcDlVvnvPblAU+Y+NwQVCdWDAX/gKHEQVf5FPnH3M8Vz1gimhZk+MCstWNen6zOe3khUKQ1QzeyLD67UzoNxD1+PSt6VNmjKaroeRBSn/7nUjkTxPtr702ZQbr2eo88ez18Xq5tXlIzsOQ0/G2txpUBKJVznCv2L4je6D3+yy6D4U54Cmpw3Uem1+xdXWFlPPpMwblElYY19FM+pHUzBvW4WBCIruxlYm4qSIfgS2vb6GiI/RHa+/CA3uT3t8'/db_casino?serverTimezone=UTC&characterEncoding=utf8&useUnicode=true&useSSL=false
+      url: jdbc:mysql://118.25.16.144:3306/db_casino?serverTimezone=UTC&characterEncoding=utf8&useUnicode=true&useSSL=false
       username: '{cipher}AQBOKZi6wk5r4ZE6o/Zh4D38o5GitiUvTnOyeZnkWkxhwZhxlCeDnc/hDTOC+F7p6S16DNC7Myufl7FlxPbFYYOSmYp5IPV9RyZXZcU7aAbNL+VoQTGU22ampnYxS4X8IaHkmPBnY+glX1tD+47Gl4yBOQeo2EdOL0WoTRgv3Cs7Y/skv5ddSVKYzCcAEmDBZnXiXNf12soPVVF3WUUOksJ1U1Q1CILkTKZMuDCkh3zPuJqy0vYCNv8KqYPFeblAwMycDOibMaBvFoOZZ9cU4upbMvbMaDiSNAofFJnbQXD+cGl62nG7nzZ1t9XvudwBp5WEzP/MB2xkJ3Cbf9mFazqkadLiPA4/lm67bAmNCaZ8vAGWXqkAjxJPZCdi3OkgXzg='
       password: '{cipher}AQCeCtplJ8ecKLpZsgyDRU9F91Glr/PHT/V2RgCFBnC7vPNB3183HbYIXNveMUcdRRkw+2Q5i+ZhiaJeio1MBOHyuNyXymW2RyMB7BNTEFAzNEQbXwzSx8O5+wpJ03U9ZAc2wpUaV2XhpDMUPDmTzyunumiaPc8gkYzY/079lGAATqzt1e/9O8sAGhdipyOcBEciMnpiNHNQFlbHonsNa9GaBsvZFhUjpxoTbFMo3zOSgAet9ei6Q8SIVtS1jpbDcM56dIKTc2/rlsAsvaZNGAG02CqilWZFn3F5JCq+/JlNcZMMYsB3AyUtT6xVOqdypLTV6zdi7T2bB8nLw4dyLzR4z57rzh2UqsM187pASd6QJRPwmQEtiOm10URFfakgeGA='
       # driverClassName: com.mysql.jdbc.Driver
@@ -148,7 +148,7 @@ newadd:
       # max-lifetime: 1800000
 
     accountdetail:
-      url: jdbc:mysql://'{cipher}AQCUPxy9MWnfukBdUvhJtzCQk/ndDoi+UXjrGYwr1xykQhmltUyaxJ2p1MnIhdp0ek35SivIVBhtZuAa3ITgh80Gt4ka5by/xtZ+xi2td+lvAJIXEGjxdBHj2hKdiUyvCinpz71AiJkWz2XEfPdvVlCfOMsqcDlVvnvPblAU+Y+NwQVCdWDAX/gKHEQVf5FPnH3M8Vz1gimhZk+MCstWNen6zOe3khUKQ1QzeyLD67UzoNxD1+PSt6VNmjKaroeRBSn/7nUjkTxPtr702ZQbr2eo88ez18Xq5tXlIzsOQ0/G2txpUBKJVznCv2L4je6D3+yy6D4U54Cmpw3Uem1+xdXWFlPPpMwblElYY19FM+pHUzBvW4WBCIruxlYm4qSIfgS2vb6GiI/RHa+/CA3uT3t8'/db_account_detail?serverTimezone=UTC&characterEncoding=utf8&useUnicode=true&useSSL=false
+      url: jdbc:mysql://118.25.16.144:3306/db_account_detail?serverTimezone=UTC&characterEncoding=utf8&useUnicode=true&useSSL=false
       username: '{cipher}AQBOKZi6wk5r4ZE6o/Zh4D38o5GitiUvTnOyeZnkWkxhwZhxlCeDnc/hDTOC+F7p6S16DNC7Myufl7FlxPbFYYOSmYp5IPV9RyZXZcU7aAbNL+VoQTGU22ampnYxS4X8IaHkmPBnY+glX1tD+47Gl4yBOQeo2EdOL0WoTRgv3Cs7Y/skv5ddSVKYzCcAEmDBZnXiXNf12soPVVF3WUUOksJ1U1Q1CILkTKZMuDCkh3zPuJqy0vYCNv8KqYPFeblAwMycDOibMaBvFoOZZ9cU4upbMvbMaDiSNAofFJnbQXD+cGl62nG7nzZ1t9XvudwBp5WEzP/MB2xkJ3Cbf9mFazqkadLiPA4/lm67bAmNCaZ8vAGWXqkAjxJPZCdi3OkgXzg='
       password: '{cipher}AQCeCtplJ8ecKLpZsgyDRU9F91Glr/PHT/V2RgCFBnC7vPNB3183HbYIXNveMUcdRRkw+2Q5i+ZhiaJeio1MBOHyuNyXymW2RyMB7BNTEFAzNEQbXwzSx8O5+wpJ03U9ZAc2wpUaV2XhpDMUPDmTzyunumiaPc8gkYzY/079lGAATqzt1e/9O8sAGhdipyOcBEciMnpiNHNQFlbHonsNa9GaBsvZFhUjpxoTbFMo3zOSgAet9ei6Q8SIVtS1jpbDcM56dIKTc2/rlsAsvaZNGAG02CqilWZFn3F5JCq+/JlNcZMMYsB3AyUtT6xVOqdypLTV6zdi7T2bB8nLw4dyLzR4z57rzh2UqsM187pASd6QJRPwmQEtiOm10URFfakgeGA='
       # driverClassName: com.mysql.jdbc.Driver
