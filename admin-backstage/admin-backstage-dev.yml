@@ -121,8 +121,8 @@ newadd:
   datasource:
     casinolog:
       url: jdbc:mysql://118.25.16.144:3306/db_casino_log?serverTimezone=UTC&characterEncoding=utf8&useUnicode=true&useSSL=false
-      username: wolfplus
-      password: passthis
+      username: {cipher}AQBOKZi6wk5r4ZE6o/Zh4D38o5GitiUvTnOyeZnkWkxhwZhxlCeDnc/hDTOC+F7p6S16DNC7Myufl7FlxPbFYYOSmYp5IPV9RyZXZcU7aAbNL+VoQTGU22ampnYxS4X8IaHkmPBnY+glX1tD+47Gl4yBOQeo2EdOL0WoTRgv3Cs7Y/skv5ddSVKYzCcAEmDBZnXiXNf12soPVVF3WUUOksJ1U1Q1CILkTKZMuDCkh3zPuJqy0vYCNv8KqYPFeblAwMycDOibMaBvFoOZZ9cU4upbMvbMaDiSNAofFJnbQXD+cGl62nG7nzZ1t9XvudwBp5WEzP/MB2xkJ3Cbf9mFazqkadLiPA4/lm67bAmNCaZ8vAGWXqkAjxJPZCdi3OkgXzg=
+      password: {cipher}AQCeCtplJ8ecKLpZsgyDRU9F91Glr/PHT/V2RgCFBnC7vPNB3183HbYIXNveMUcdRRkw+2Q5i+ZhiaJeio1MBOHyuNyXymW2RyMB7BNTEFAzNEQbXwzSx8O5+wpJ03U9ZAc2wpUaV2XhpDMUPDmTzyunumiaPc8gkYzY/079lGAATqzt1e/9O8sAGhdipyOcBEciMnpiNHNQFlbHonsNa9GaBsvZFhUjpxoTbFMo3zOSgAet9ei6Q8SIVtS1jpbDcM56dIKTc2/rlsAsvaZNGAG02CqilWZFn3F5JCq+/JlNcZMMYsB3AyUtT6xVOqdypLTV6zdi7T2bB8nLw4dyLzR4z57rzh2UqsM187pASd6QJRPwmQEtiOm10URFfakgeGA=
       driver-class-name: com.mysql.jdbc.Driver
       # driverClassName: com.mysql.jdbc.Driver
       # type: com.zaxxer.hikari.HikariDataSource
@@ -134,8 +134,8 @@ newadd:
       # max-lifetime: 1800000
     casino:
       url: jdbc:mysql://118.25.16.144:3306/db_casino?serverTimezone=UTC&characterEncoding=utf8&useUnicode=true&useSSL=false
-      username: wolfplus
-      password: passthis
+      username: {cipher}AQBOKZi6wk5r4ZE6o/Zh4D38o5GitiUvTnOyeZnkWkxhwZhxlCeDnc/hDTOC+F7p6S16DNC7Myufl7FlxPbFYYOSmYp5IPV9RyZXZcU7aAbNL+VoQTGU22ampnYxS4X8IaHkmPBnY+glX1tD+47Gl4yBOQeo2EdOL0WoTRgv3Cs7Y/skv5ddSVKYzCcAEmDBZnXiXNf12soPVVF3WUUOksJ1U1Q1CILkTKZMuDCkh3zPuJqy0vYCNv8KqYPFeblAwMycDOibMaBvFoOZZ9cU4upbMvbMaDiSNAofFJnbQXD+cGl62nG7nzZ1t9XvudwBp5WEzP/MB2xkJ3Cbf9mFazqkadLiPA4/lm67bAmNCaZ8vAGWXqkAjxJPZCdi3OkgXzg=
+      password: {cipher}AQCeCtplJ8ecKLpZsgyDRU9F91Glr/PHT/V2RgCFBnC7vPNB3183HbYIXNveMUcdRRkw+2Q5i+ZhiaJeio1MBOHyuNyXymW2RyMB7BNTEFAzNEQbXwzSx8O5+wpJ03U9ZAc2wpUaV2XhpDMUPDmTzyunumiaPc8gkYzY/079lGAATqzt1e/9O8sAGhdipyOcBEciMnpiNHNQFlbHonsNa9GaBsvZFhUjpxoTbFMo3zOSgAet9ei6Q8SIVtS1jpbDcM56dIKTc2/rlsAsvaZNGAG02CqilWZFn3F5JCq+/JlNcZMMYsB3AyUtT6xVOqdypLTV6zdi7T2bB8nLw4dyLzR4z57rzh2UqsM187pASd6QJRPwmQEtiOm10URFfakgeGA=
       # driverClassName: com.mysql.jdbc.Driver
       driver-class-name: com.mysql.jdbc.Driver
       # type: com.zaxxer.hikari.HikariDataSource
@@ -149,8 +149,8 @@ newadd:
 
     accountdetail:
       url: jdbc:mysql://118.25.16.144:3306/db_account_detail?serverTimezone=UTC&characterEncoding=utf8&useUnicode=true&useSSL=false
-      username: wolfplus
-      password: passthis
+      username: {cipher}AQBOKZi6wk5r4ZE6o/Zh4D38o5GitiUvTnOyeZnkWkxhwZhxlCeDnc/hDTOC+F7p6S16DNC7Myufl7FlxPbFYYOSmYp5IPV9RyZXZcU7aAbNL+VoQTGU22ampnYxS4X8IaHkmPBnY+glX1tD+47Gl4yBOQeo2EdOL0WoTRgv3Cs7Y/skv5ddSVKYzCcAEmDBZnXiXNf12soPVVF3WUUOksJ1U1Q1CILkTKZMuDCkh3zPuJqy0vYCNv8KqYPFeblAwMycDOibMaBvFoOZZ9cU4upbMvbMaDiSNAofFJnbQXD+cGl62nG7nzZ1t9XvudwBp5WEzP/MB2xkJ3Cbf9mFazqkadLiPA4/lm67bAmNCaZ8vAGWXqkAjxJPZCdi3OkgXzg=
+      password: {cipher}AQCeCtplJ8ecKLpZsgyDRU9F91Glr/PHT/V2RgCFBnC7vPNB3183HbYIXNveMUcdRRkw+2Q5i+ZhiaJeio1MBOHyuNyXymW2RyMB7BNTEFAzNEQbXwzSx8O5+wpJ03U9ZAc2wpUaV2XhpDMUPDmTzyunumiaPc8gkYzY/079lGAATqzt1e/9O8sAGhdipyOcBEciMnpiNHNQFlbHonsNa9GaBsvZFhUjpxoTbFMo3zOSgAet9ei6Q8SIVtS1jpbDcM56dIKTc2/rlsAsvaZNGAG02CqilWZFn3F5JCq+/JlNcZMMYsB3AyUtT6xVOqdypLTV6zdi7T2bB8nLw4dyLzR4z57rzh2UqsM187pASd6QJRPwmQEtiOm10URFfakgeGA=
       # driverClassName: com.mysql.jdbc.Driver
       driver-class-name: com.mysql.jdbc.Driver
       # type: com.zaxxer.hikari.HikariDataSource
